@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(120deg, #f0f4ff 0%, #e0e7ff 100%);
+	color: #222;
+	min-height: 100vh;
+}
+
+header.site-header {
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	padding: 18px 0;
+}
+
+.header-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #4f46e5;
+	text-decoration: none;
+}
+.brand .accent {
+	color: #06b6d4;
+}
+
+.main-nav {
+	display: flex;
+	gap: 24px;
+}
+.main-nav a {
+	color: #222;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.main-nav a:hover {
+	color: #4f46e5;
+}
+.contact-cta {
+	background: #4f46e5;
+	color: #fff !important;
+	padding: 8px 18px;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: background 0.2s;
+}
+.contact-cta:hover {
+	background: #06b6d4;
+}
+.nav-toggle {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: #4f46e5;
+	cursor: pointer;
+}
+
+main {
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+.hero {
+	background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%);
+	color: #fff;
+	border-radius: 18px;
+	padding: 48px 32px;
+	box-shadow: 0 4px 24px rgba(79,70,229,0.08);
+	margin-bottom: 32px;
+}
+.hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 18px;
+}
+.hero .lead {
+	font-size: 1.3rem;
+	margin-bottom: 12px;
+}
+.hero strong {
+	color: #06b6d4;
+}
+
+/* Responsivo */
+@media (max-width:900px){
+	.header-inner, main {
+		max-width: 98vw;
+		padding: 0 8px;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-toggle {
+		display: block;
+	}
+	.hero {
+		padding: 32px 12px;
+	}
+}
+
+/* ...existing code... */
+.media-block{padding:18px 0}
+.video-wrap{max-width:720px}
+.callout{background:linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));padding:18px;border-radius:12px;margin:20px 0}
+.media-block{padding:18px 0}
+.video-wrap{max-width:720px}
+.callout{background:linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));padding:18px;border-radius:12px;margin:20px 0}
+
+
+.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.site-footer{padding:18px 0}
+
+
+/* CV */
+.cv-top{display:flex;gap:14px;align-items:center}
+.cv-grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:18px}
+.aside{background:var(--glass);padding:12px;border-radius:12px}
+
+
+/* Forms */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid label{display:block}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+.fieldset{border:0}
+.form-actions{grid-column:1 / -1;display:flex;gap:10px}
+
+
+/* Responsive */
+@media (max-width:900px){
+.hero-grid{grid-template-columns:1fr}
+.cv-grid{grid-template-columns:1fr}
+.form-grid{grid-template-columns:1fr}
+.main-nav{display:none}
+.nav-toggle{display:block}
+}
+
+
+/* Small header variant */
+.site-header.small{background:transparent}
+.site-header{position:sticky;top:0;background:transparent;padding:10px 0;z-index:50}
+
+
+/* Simple animations */
+@keyframes floatUp{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+.btn-primary{animation:floatUp 6s ease-in-out infinite}
+
+
+/* Accessibility helpers */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+
+/* Price tables */
+.table-prices td:last-child{text-align:right}
+
+
+/* small tweaks */
+.muted{color:var(--muted)}
+.accent{color:var(--accent)}
+
+
+
+
+/* End of CSS */
